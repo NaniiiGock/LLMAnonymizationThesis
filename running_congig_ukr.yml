@@ -1,0 +1,67 @@
+
+processing:
+  order:
+    - pattern_processor
+    - ner_processor
+    - llm_invoke
+    - postprocessor
+
+pattern_processor:
+  custom_patterns:
+    employee_id: '\bEMP\d{6}\b'
+    account_number: '\bACCT-\d{10}\b'
+    ip_address: '\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b'
+    date_of_birth: '\b(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/\d{4}\b'
+
+ner_processor:
+  model: "uk_core_news_sm"  
+  # Alternative models: "en_core_web_md" or "en_core_web_lg" for better but slower performance
+  entity_types:
+    - PERSON
+    - ORG
+    - GPE
+    - LOC
+    - DATE
+    - MONEY
+  
+  sensitivity_levels:
+    PERSON: 5
+    ORG: 3
+    GPE: 2
+    LOC: 2
+    DATE: 3
+    MONEY: 4
+
+llm_invoke:
+  provider: "openai"  # Options: "openai", "anthropic", "local"
+  model: "gpt-4"      # Model name depends on the provider
+  system_prompt: "Ти - асистент."
+  temperature: 0.3
+  max_tokens: 1000
+  api:
+    timeout_seconds: 30
+    retries: 3
+
+postprocessor:
+  mode: "restore_original"  # Options: "restore_original", "keep_anonymized", "generic_placeholders"
+  additional_filtering: false
+  # For generic_placeholders mode, customize placeholder format
+  placeholder_format: "<redacted {entity_type}>"
+
+files:
+  input_path: "data/user_input_uk.txt"
+  task_path: "data/task_description_uk.txt"
+  output_path: "data/preprocessed_output_uk.txt"
+  log_path: "logs/pipeline.log"
+
+logging:
+  enabled: true
+  level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR
+  retention_days: 30
+  include_timestamps: true
+  include_entity_counts: true
+
+retriever:
+  embeddings: "openai" # can be llama
+  retrieval_type: "similarity_search" 
+  k: 5

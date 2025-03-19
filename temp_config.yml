@@ -1,0 +1,56 @@
+files:
+  input_path: data/user_input.txt
+  log_path: logs/pipeline.log
+  output_path: data/preprocessed_output.txt
+  task_path: data/task_description.txt
+llm_invoke:
+  api:
+    retries: 3
+    timeout_seconds: 30
+  max_tokens: 1000
+  model: gpt-4
+  provider: openai
+  system_prompt: You are a assistant.
+  temperature: 0.3
+logging:
+  enabled: true
+  include_entity_counts: true
+  include_timestamps: true
+  level: INFO
+  retention_days: 30
+ner_processor:
+  entity_types:
+  - PERSON
+  - ORG
+  - GPE
+  - LOC
+  - DATE
+  - MONEY
+  model: en_core_web_sm
+  sensitivity_levels:
+    DATE: 3
+    GPE: 2
+    LOC: 2
+    MONEY: 4
+    ORG: 3
+    PERSON: 5
+pattern_processor:
+  custom_patterns:
+    account_number: \bACCT-\d{10}\b
+    date_of_birth: \b(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/\d{4}\b
+    employee_id: \bEMP\d{6}\b
+    ip_address: \b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b
+postprocessor:
+  additional_filtering: false
+  mode: restore_original
+  placeholder_format: <redacted {entity_type}>
+processing:
+  order:
+  - pattern_processor
+  - ner_processor
+  - llm_invoke
+  - postprocessor
+retriever:
+  embeddings: openai
+  k: 5
+  retrieval_type: similarity_search
