@@ -1,0 +1,7 @@
+My name is John Smith (employee ID: EMP123456).
+Everyone can email me at john.smith@company.com or call 123-456-7890.
+I work at Microsoft in Seattle with Sarah Johnson.
+
+My friend's name is Dave Black (employee ID: EMP123445).
+Everyone can email him at dave.black@company.com or call 123-456-7890.
+He works at Google in Seattle with Florin Dark.
