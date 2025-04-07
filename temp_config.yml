@@ -44,10 +44,15 @@ postprocessor:
   additional_filtering: false
   mode: restore_original
   placeholder_format: <redacted {entity_type}>
+context_processor:
+  mode: iteratively
+  model: llama
+  level: 2
+  margin: 20
 processing:
   order:
-  - pattern_processor
-  - ner_processor
+  - llm_ner_processor
+  - context_processor
   - llm_invoke
   - postprocessor
 retriever:

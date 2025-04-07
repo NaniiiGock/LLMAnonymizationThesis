@@ -34,6 +34,19 @@ st.sidebar.header("Edit Configuration")
 
 # =================== SIDEBAR ===================
 
+with st.sidebar.expander("Retriever", expanded=False):
+    chunk_size = st.number_input("Chunk Size", min_value=50, max_value=5000, value=500, step=50)
+    chunk_overlap = st.number_input("Chunk Overlap", min_value=0, max_value=500, value=50, step=10)
+    retrieval_type = st.selectbox("Search Type", options=["similarity", "mmr", "hybrid"], index=0)
+    k = st.number_input("Top-K Results", min_value=1, max_value=100, value=5, step=1)
+
+    config["retriever"] = {
+        "chunk_size": chunk_size,
+        "chunk_overlap": chunk_overlap, 
+        "retrieval_type" : retrieval_type,
+        "k" : k
+        }
+
 with st.sidebar.expander("Pattern Processor", expanded=False):
     custom_patterns = config.get("pattern_processor", {}).get("custom_patterns", {})
 
@@ -47,9 +60,13 @@ with st.sidebar.expander("Pattern Processor", expanded=False):
     config["pattern_processor"] = {"custom_patterns": custom_patterns}
 
 with st.sidebar.expander("NER Processor", expanded=False):
-    model = st.selectbox("NER Model", ["en_core_web_sm", "uk_core_news_sm"],
-                         index=["en_core_web_sm", "uk_core_news_sm"].index(config.get("ner_processor", {}).get("model", "en_core_web_sm")))
+    model = st.selectbox("NER Model", ["en_core_web_sm", "uk_core_news_sm", "roberta_ukr", "bert_eng"],
+                         index=["en_core_web_sm", "uk_core_news_sm", "roberta_ukr", "bert_eng"].index(config.get("ner_processor", {}).get("model", "en_core_web_sm")))
     config["ner_processor"] = {"model": model}
+
+    context_awareness_level = st.selectbox("Context Awareness Level", ["0", "1", "2"], 
+                                           index=["0", "1", "2"].index(config.get("ner_processoe", {}).get("context_awareness_level", "0")))
+    config["ner_processor"]["context_awareness_level"] = context_awareness_level
 
     entity_types = config.get("ner_processor", {}).get("entity_types", [])
     new_entity = st.text_input("New Entity Type", "")
@@ -89,6 +106,9 @@ if st.sidebar.button("Save Config"):
     st.sidebar.success("Configuration saved successfully!")
 
 
+
+
+
 # =================== MAIN PAGE ===================
 
 order = config.get("processing", {}).get("order", [])
@@ -97,7 +117,8 @@ config["processing"] = {"order": order}
 
 st.title("Chat with Backend Processing")
 
-uploaded_files = st.file_uploader("Upload Files - only while RETRIEVER step is used", type=None, accept_multiple_files=True)
+
+uploaded_files = st.file_uploader("Upload Files - only while RETRIEVER step is used", type=None, accept_multiple_files=True, key="file_uploader")
 upload_folder = "uploaded_files"
 os.makedirs(upload_folder, exist_ok=True)
 if uploaded_files:
@@ -106,6 +127,24 @@ if uploaded_files:
         with open(file_path, "wb") as f:
             f.write(uploaded_file.read())
         st.success(f"Saved file: {uploaded_file.name}")
+
+if st.button("Clear ChromaDB and Uploaded Files"):
+    import shutil
+    db_path = "./chroma_db"
+    upload_folder = "uploaded_files"
+    try:
+        shutil.rmtree(db_path, ignore_errors=True)
+        shutil.rmtree(upload_folder, ignore_errors=True)
+        os.makedirs(upload_folder, exist_ok=True)
+
+        if "file_uploader" in st.session_state:
+            del st.session_state["file_uploader"]
+
+        st.success("ChromaDB and uploaded files cleared successfully.")
+        st.rerun()
+        
+    except Exception as e:
+        st.error(f"Error during cleanup: {str(e)}")
 
 user_input = st.text_area("User Input", height=150)
 task_description = st.text_area("Task Description", height=100)

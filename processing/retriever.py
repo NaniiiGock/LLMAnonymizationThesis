@@ -7,13 +7,17 @@ from dotenv import load_dotenv
 from langchain_community.document_loaders import TextLoader
 from langchain_community.document_loaders import PyPDFLoader
 import os
+# from ..database.chroma_db import ChromaDB
 
 load_dotenv()
 
 class Retriever:
     def __init__(self, config=None):
         self.config = config
-        pass
+        self.chunk_size = config["chunk_size"]
+        self.chunk_overlap = config["chunk_overlap"]
+        self.k = config["k"]
+        self.retrieval_type = config["retrieval_type"]
 
     def load_file(self, folder_path):
         
@@ -48,8 +52,8 @@ class Retriever:
 
     def split(self, docs):
         text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=1000,
-            chunk_overlap=200,
+            chunk_size=self.chunk_size,
+            chunk_overlap=self.chunk_overlap,
             add_start_index=True,
         )
         all_splits = text_splitter.split_documents(docs)
@@ -59,11 +63,27 @@ class Retriever:
         return all_splits
 
     def store(self, all_splits):
-        vectorstore = Chroma.from_documents(documents=all_splits, embedding=OpenAIEmbeddings())
+        persist_dir = "./chroma_db"  
+        embedding = OpenAIEmbeddings()
+        collection_name = "privacy_pipeline_collection"
+
+        try:
+            vectorstore = Chroma(
+                collection_name=collection_name,
+                embedding_function=embedding,
+                persist_directory=persist_dir
+            )
+            # Check if collection is empty to avoid re-adding docs
+            if vectorstore._collection.count() == 0:
+                vectorstore.add_documents(all_splits)
+        except Exception as e:
+            print(f"Chroma Init Error {e}")
+            raise
+
         return vectorstore
     
     def retrieve(self, vectorstore, query):
-        retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 2})
+        retriever = vectorstore.as_retriever(search_type=self.retrieval_type, search_kwargs={"k": self.k})
         retrieved_docs = retriever.invoke(query)
         return retrieved_docs
     
@@ -73,7 +93,8 @@ class Retriever:
         vectorstore = self.store(all_splits)
         retrieved_docs = self.retrieve(vectorstore, task)
         retrieved_docs = [doc.page_content for doc in retrieved_docs]
-        return retrieved_docs
+        cleaned_retrieved_docs = [doc.replace("\n", "") for doc in retrieved_docs]
+        return cleaned_retrieved_docs
 
 async def main():
     retriever = Retriever()
@@ -117,7 +138,6 @@ async def main():
     response =  await openai_model.query_llm(prompt)
     print(response)
 
-
-if __name__=="__main__":
-    import asyncio
-    asyncio.run(main())
+# if __name__=="__main__":
+#     import asyncio
+#     asyncio.run(main())

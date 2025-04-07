@@ -2,7 +2,7 @@ from privacy_pipeline import PrivacyPipeline
 import os
 
 async def main():
-    config_path = "running_congig_ukr.yml"
+    config_path = "temp_config.yml"
     pipeline = PrivacyPipeline(config_path)
     
     input_path = pipeline.config['files']['input_path']

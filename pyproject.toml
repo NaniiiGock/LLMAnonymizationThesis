@@ -1,7 +1,8 @@
+
 [project]
 name = "llmanonymizationuv"
 version = "0.1.0"
-description = "Add your description here"
+description = "LLM Anonymization Framework"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -36,4 +37,11 @@ dependencies = [
     "pandas>=2.2.3",
     "ipykernel>=6.29.5",
     "pypdf>=5.4.0",
+    "opacus>=1.5.3",
+    "transformers>=4.49.0",
+    "sentence-transformers>=4.0.1",
+    "openpyxl>=3.1.5",
+    "ragatouille>=0.0.9",
+    "tenseal>=0.3.16",
+    "cryptography>=44.0.2",
 ]

@@ -12,7 +12,7 @@ pattern_processor:
     ip_address: \b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b
     date_of_birth: \b(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/\d{4}\b
 ner_processor:
-  model: en_core_web_sm
+  model: bert_eng
   entity_types: []
   sensitivity_levels: {}
 llm_invoke:
@@ -31,6 +31,7 @@ logging:
   enabled: true
   level: INFO
 retriever:
-  embeddings: openai
-  retrieval_type: similarity_search
+  chunk_size: 500
+  chunk_overlap: 50
+  retrieval_type: similarity
   k: 5

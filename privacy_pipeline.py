@@ -2,10 +2,12 @@
 from datetime import datetime
 from dotenv import load_dotenv
 from processing.pattern_processing import PatternProcessor
-from processing.ner_processing import NERProcessor
+from processing.context_aware_masking import ContexAwareMasker
+# from processing.ner_processing import NERProcessor
 from processing.postprocessor import PostProcessor
 from providers.openai_provider import OpenAIProvider
-from processing.retriever import Retriever
+# from processing.retriever import Retriever
+from processing.ollama_processor import LlamaProvider
 import yaml
 import json
 
@@ -23,10 +25,10 @@ class PrivacyPipeline:
         self.reverse_map = {}
 
         self.pattern_processor = PatternProcessor(self.config['pattern_processor'])
-        self.ner_processor = NERProcessor(self.config['ner_processor'])
+        # self.ner_processor = NERProcessor(self.config['ner_processor'])
         self.post_processor = PostProcessor(self.config['postprocessor']['mode'])
         self.openai = OpenAIProvider(self.config['llm_invoke'])
-        self.retriever = Retriever(self.config["retriever"])
+        # self.retriever = Retriever(self.config["retriever"])
         self.logging_enabled = self.config['logging']['enabled']
         self.log_path = self.config['files']['log_path']
     
@@ -100,7 +102,7 @@ class PrivacyPipeline:
             log_file.write(json.dumps(log_entry) + '\n')
 
 
-    async def process_pipeline(self, user_input, task, uploaded_files):
+    async def process_pipeline(self, user_input, task, uploaded_files=None):
         results = {
             "original_input": user_input,
             "original_task": task,
@@ -150,6 +152,41 @@ class PrivacyPipeline:
                     "step": "ner_processor",
                     "entities_found": len(ner_replacements)
                 })
+            
+            elif step == "llm_ner_processor":
+                llama_provider = LlamaProvider()
+                llama_result = llama_provider.run(current_input)
+                llama_masked_text = llama_result["masked_text"]
+                llama_mapping = llama_result["mapping"]
+                current_replacements = llama_mapping
+                current_input = llama_masked_text
+                new_entity_map = {}
+                for key, val in current_replacements:
+                    new_entity_map[val] = key
+                current_entity_map = new_entity_map
+
+                print("====================")
+                print("LLM PROCESSOR")
+                print(current_replacements)
+                print(current_entity_map)
+                print("====================")
+
+                results["processing_steps"].append({
+                    "step": "llm_processor",
+                    "entities_found": len(llama_mapping)
+                })
+            
+            elif step == "context_processor":
+                context_processor_config = self.config["context_processor"]
+                context_masker = ContexAwareMasker(context_processor_config)
+                current_replacements, current_entity_map = context_masker.run(current_replacements, user_input)
+                current_input = context_masker.replace_entities_with_masks(user_input, current_replacements)
+                print("====================")
+                print("CONTEXT MASKER")
+                print(current_input)
+                print(current_replacements)
+                print(current_entity_map)
+                print("====================")
 
             elif step == "llm_invoke":
                 print("====================")

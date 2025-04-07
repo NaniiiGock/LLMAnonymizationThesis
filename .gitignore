@@ -10,4 +10,6 @@ wheels/
 .venv
 my_env/
 .env
+*.sqlite3
+*.bin
 
