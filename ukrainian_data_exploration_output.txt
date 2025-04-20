@@ -1,0 +1,50 @@
+Basic Overview of the Data:
+(217848, 4)
+Columns: Index(['Word', 'POS', 'Tag', 'Sentence'], dtype='object')
+Data Types:
+Word        object
+POS         object
+Tag         object
+Sentence     int64
+dtype: object
+NER Tag Distribution:
+Tag
+O           216663
+I-ORG          285
+B-PERS         216
+B-ORG          207
+B-LOC          138
+I-PERS         122
+B-JOB           47
+I-LOC           35
+I-PERIOD        28
+B-MISC          26
+I-MISC          16
+B-ART           12
+I-DOC           12
+I-JOB           10
+B-DOC            9
+I-ART            9
+B-PERIOD         4
+I-TIME           4
+B-DATE           2
+I-QUANT          1
+B-QUANT          1
+B-MON            1
+Name: count, dtype: int64
+POS Tag Distribution:
+POS
+O                           184418
+I-ORG                         5209
+B-PERS                        3808
+B-ORG                         3424
+B-LOC                         2022
+                             ...  
+ÐÐÐÐÐ                       1
+Ð°Ð´Ñ                           1
+Ð²Ð°Ð»ÐµÐ½Ñ                     1
+Ð¯ÐÐÐ                         1
+ÐµÐ³ÑÐ¾Ð½Ð°Ð»ÑÐ½Ð¾Ð¼Ñ         1
+Name: count, Length: 1776, dtype: int64
+Missing Data Analysis:
+Series([], dtype: int64)

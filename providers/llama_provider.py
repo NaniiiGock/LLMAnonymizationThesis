@@ -1,22 +1,22 @@
 import ollama
 
 class OllamaProvider:
-    def __init__(self, config):
-        self.model = config["model"]
-        self.system_prompt = config["system_prompt"]
-        self.temperature = config["temperature"]
-        self.max_tokens = config["max_tokens"]
+    def __init__(self, config={}):
+        self.config = config
+        self.model = self.config.get("model", "llama3.2")
+        self.system_prompt = self.config.get("system_prompt")
+        self.temperature = self.config.get("temperature", 0.5)
+        self.max_tokens = self.config.get("max_tokens", 1000)
         
-    def query_llm(self, prompt, task):
+    def query_llm(self, prompt):
         
         try:
             response = ollama.chat(model='llama3.2', messages=[
             {
                 'role': 'user',
-                'content': prompt + task
+                'content': prompt
             }
             ])
-
-            print(response['message']['content'])
+            return response['message']['content']
         except Exception as e:
             return f"Error querying LLM: {str(e)}"

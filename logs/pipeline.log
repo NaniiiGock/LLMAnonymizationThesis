@@ -43,3 +43,286 @@
 {"timestamp": "2025-04-06T20:20:51.206374", "processing_status": "success", "steps_completed": ["llm_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
 {"timestamp": "2025-04-06T20:22:36.745240", "processing_status": "success", "steps_completed": ["llm_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
 {"timestamp": "2025-04-06T20:23:49.484442", "processing_status": "success", "steps_completed": ["llm_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T19:47:10.634418", "processing_status": "success", "steps_completed": ["llm_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T19:48:54.241584", "processing_status": "success", "steps_completed": ["llm_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T19:49:18.612753", "processing_status": "success", "steps_completed": ["llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T19:56:13.114220", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T19:58:07.383691", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T20:02:00.051056", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T20:05:48.856915", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T20:11:57.943208", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T20:20:33.297158", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T20:25:17.065639", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T20:29:28.716471", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T20:39:00.783782", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T20:40:21.382066", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T20:41:32.541486", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T20:42:14.990212", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T20:42:41.897430", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T20:43:07.750109", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-07T20:43:48.512033", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T12:27:13.332693", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "llm_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T13:00:58.082253", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T13:08:52.684966", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T13:22:32.713452", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T13:39:22.079460", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T13:43:22.215883", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T13:44:14.655223", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T13:45:50.229964", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T13:56:44.535419", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T13:58:48.724365", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T14:02:33.343964", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T14:04:39.731320", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T15:45:31.134036", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T15:46:38.810480", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T15:48:59.750707", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T15:50:54.069477", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T15:51:09.170252", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T15:52:52.950792", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T15:53:31.841645", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T15:54:42.828167", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T15:57:19.738657", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T16:03:40.218023", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T16:06:54.820104", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T16:07:58.486770", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T16:10:09.030385", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T16:11:56.798523", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T16:19:33.791951", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T17:12:28.242265", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T17:15:03.130311", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T17:15:43.808045", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T17:19:53.553251", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T17:29:22.776957", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-08T17:30:44.160909", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:12:44.269827", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:13:03.282897", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:13:05.054662", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:13:09.229763", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:15:57.474834", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:15:59.421238", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:00.954859", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:04.138396", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:07.052260", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:09.853526", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:12.340035", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:15.518459", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:18.899286", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:21.656904", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:23.296258", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:25.463677", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:32.871715", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:34.747058", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:39.475576", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:41.972536", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:49.481185", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:51.045941", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:52.685669", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:55.037666", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:16:58.677412", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:17:03.114882", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:17:05.983259", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:17:09.238362", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:17:13.479611", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:17:21.418635", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:17:29.093291", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:17:34.713636", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:17:40.984871", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:17:42.894389", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:17:49.482642", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:17:54.038274", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:17:57.836647", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:18:01.065686", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:18:02.797037", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:18:06.003796", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:18:08.666833", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:18:12.010102", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:18:17.857015", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:18:19.440317", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:18:23.070451", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:18:29.911565", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:18:35.637583", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:18:39.455282", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:18:41.810116", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:18:43.447742", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:18:45.086405", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:18:51.949299", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:18:55.223683", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:20:57.704485", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:25:30.444709", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:28:12.521343", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:28:35.113437", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:28:37.368223", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:29:45.975185", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:29:48.167016", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:31:25.303635", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:31:27.351027", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:31:29.061638", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:32:32.491760", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:32:34.220202", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:32:35.728817", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:33:19.890026", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:33:21.391424", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:33:23.063541", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:33:57.163176", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:33:59.084492", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:34:00.539717", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:34:31.671892", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:34:35.561760", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:34:37.682172", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:34:40.898461", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:34:43.550476", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:34:45.804788", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:34:48.262691", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:34:50.765048", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:34:53.175251", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:34:55.806246", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:39:12.067652", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:39:14.504518", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:39:17.224948", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:39:19.825203", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:39:22.222670", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:39:24.690014", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:39:27.160360", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:39:30.066934", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:39:32.728884", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T21:39:35.185934", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T22:38:10.282532", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T22:38:12.775103", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T22:38:15.435093", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T22:38:18.010170", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T22:38:20.611978", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T22:38:23.245252", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T22:38:25.754390", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T22:38:28.441360", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T22:38:31.103540", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T22:38:33.765802", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T22:42:16.984284", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T22:42:19.354280", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T23:11:10.222649", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-18T23:11:12.444961", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:35:43.392058", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:35:45.085535", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:35:48.403585", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:35:51.579310", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:35:54.673348", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:35:56.634984", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:35:58.337020", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:36:00.384594", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:36:02.228537", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:36:03.967084", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:36:05.752482", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:36:07.856887", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:36:13.285628", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:36:15.743803", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:36:19.836785", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:36:21.998999", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:36:25.948097", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:36:27.512380", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:36:29.276388", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T13:36:31.979302", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:14:42.336860", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:14:44.501787", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:14:47.863323", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:14:51.142804", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:14:58.614945", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:15:00.355754", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:15:02.094130", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:15:04.757272", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:15:08.456426", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:15:12.646865", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:15:15.611615", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:15:18.821841", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:15:20.833798", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:15:27.184338", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:15:33.329649", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:15:38.039113", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:15:41.518400", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:15:43.261084", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:15:48.453240", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:15:52.577614", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:26:54.090718", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:27:01.462285", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:27:19.054390", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:27:35.250268", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:27:48.492174", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:27:58.242143", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:28:16.310995", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:28:44.519643", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:29:02.999414", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:29:15.900941", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:29:25.630957", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:29:42.009200", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:30:09.244135", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:30:27.879373", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:30:43.237990", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:31:08.937133", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:31:28.912396", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:32:06.584604", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:32:32.082398", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T22:32:47.051940", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:13:55.593585", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:13:59.646080", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:02.920458", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:04.865784", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:09.120564", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:11.415372", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:14.288659", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:16.010091", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:17.972186", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:20.436257", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:23.910873", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:26.164914", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:28.157834", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:33.440246", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:38.734574", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:43.162941", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:46.337285", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:48.183526", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:54.429619", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-19T23:14:57.804274", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:41:44.911919", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:41:48.721335", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:41:51.484892", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:41:53.254935", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:41:56.789510", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:41:58.469293", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:42:01.111960", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:42:02.837282", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:42:04.533825", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:42:07.359601", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:42:10.226696", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:42:12.174203", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:42:14.120190", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:42:21.897960", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:42:26.404250", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:42:30.091972", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:42:34.085646", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:42:35.827455", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:42:41.257749", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:42:44.835991", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:44:36.592241", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:44:38.891443", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:44:43.124319", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:44:46.079083", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:44:47.820037", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:44:50.089307", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:44:51.739144", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:44:53.417574", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:44:55.499737", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:44:57.547704", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:46:49.777166", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:47:10.665729", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:47:33.395387", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:47:41.385246", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:48:01.760515", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:48:19.474683", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:48:34.806353", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:48:53.348105", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:49:15.071511", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:49:34.846036", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:52:04.431766", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T11:52:25.627217", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T12:09:38.432538", "processing_status": "success", "steps_completed": ["retriever", "pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T12:12:09.657647", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T12:12:29.345295", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}
+{"timestamp": "2025-04-20T12:13:00.649831", "processing_status": "success", "steps_completed": ["pattern_processor", "ner_processor", "llm_processor", "postprocessor"], "entity_counts": {}}

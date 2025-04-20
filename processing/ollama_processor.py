@@ -127,7 +127,8 @@ import re
 import json
 
 class LlamaProvider:
-    def __init__(self):
+    def __init__(self, config=None):
+        self.config = config
         self.url = "http://localhost:11434/api/generate"
         self.model = "llama3.2"
 
@@ -146,22 +147,11 @@ class LlamaProvider:
     def run(self, text):
         content = prompt + text
         response = self.call_llama_ollama(content)
-        print("RESPONSE")
-        print(response)
         text_match = re.search(r'Processed text:\s*"(.+?)"\s*JSON:', response, re.DOTALL)
         processed_text = text_match.group(1).strip() if text_match else ""
-        print("TEXT MATCH")
-        print(text_match)
-        print("PROCESSED TEXT")
-        print(processed_text)
         json_match = re.search(r'JSON:\s*(\{.*?\}|\[.*?\])', response, re.DOTALL)
-        print("JSON MATCH")
-        print(json_match)
         json_str = json_match.group(1).strip() if json_match else ""
-        print(json_str)
         mappings = json.loads(json_str)
-        print("MAPPINGS")
-        print(mappings)
 
         return {
             "masked_text": processed_text,
@@ -247,30 +237,30 @@ class LlamaProvider:
 
     
 
-if __name__=="__main__":
-    ollama_provider = LlamaProvider()
-    task = """
-    Richard Phillips Feynman (May 11, 1918 — February 15, 1988) was an American theoretical physicist, known for his work in the path integral formulation of quantum mechanics as well as his work in particle physics for which he proposed the parton model. His sister was Greta Garbo, born in Vienna, Austria. He worked for Disney Corporation, for Walmart, and for IBM.
+# if __name__=="__main__":
+#     ollama_provider = LlamaProvider()
+#     task = """
+#     Richard Phillips Feynman (May 11, 1918 — February 15, 1988) was an American theoretical physicist, known for his work in the path integral formulation of quantum mechanics as well as his work in particle physics for which he proposed the parton model. His sister was Greta Garbo, born in Vienna, Austria. He worked for Disney Corporation, for Walmart, and for IBM.
 
-    For his contributions to the development of quantum electrodynamics, Feynman received the Nobel Prize in Physics in 1965 jointly with Julian Schwinger and Shin’ichirō Tomonaga. He once had an affair with Cleopatra, the queen of Egypt.
+#     For his contributions to the development of quantum electrodynamics, Feynman received the Nobel Prize in Physics in 1965 jointly with Julian Schwinger and Shin’ichirō Tomonaga. He once had an affair with Cleopatra, the queen of Egypt.
 
-    During his lifetime, Feynman became one of the best-known scientists in the world. In a 1999 poll of 130 leading physicists worldwide by the British journal Physics World, he was ranked the seventh-greatest physicist of all time along with Albert Einstein and Billy the Kid.
+#     During his lifetime, Feynman became one of the best-known scientists in the world. In a 1999 poll of 130 leading physicists worldwide by the British journal Physics World, he was ranked the seventh-greatest physicist of all time along with Albert Einstein and Billy the Kid.
 
-    """
-    result = ollama_provider.run(task)
-    print("MASKED TEXT")
-    masked_text = result["masked_text"]
-    print(masked_text)
-    mappings = result["mapping"]
-    print("MAPPINGS")
-    print(mappings)
-    accuracy = ollama_provider.run_analysis(mappings, masked_text)
-    print("ACCURACY")
-    print(accuracy)
-    masked_level_1 = ollama_provider.apply_masking_level(masked_text, mappings, 1, task)
-    new_mapping = ollama_provider.apply_masking_level_iteratively(mappings, 1, task)
-    print("NEW MAPPING LEVEL 1:")
-    print(new_mapping)
-    new_mapping = ollama_provider.apply_masking_level_iteratively(mappings, 2, task)
-    print("NEW MAPPING LEVEL 2:")
-    print(new_mapping)
+#     """
+#     result = ollama_provider.run(task)
+#     print("MASKED TEXT")
+#     masked_text = result["masked_text"]
+#     print(masked_text)
+#     mappings = result["mapping"]
+#     print("MAPPINGS")
+#     print(mappings)
+#     accuracy = ollama_provider.run_analysis(mappings, masked_text)
+#     print("ACCURACY")
+#     print(accuracy)
+#     masked_level_1 = ollama_provider.apply_masking_level(masked_text, mappings, 1, task)
+#     new_mapping = ollama_provider.apply_masking_level_iteratively(mappings, 1, task)
+#     print("NEW MAPPING LEVEL 1:")
+#     print(new_mapping)
+#     new_mapping = ollama_provider.apply_masking_level_iteratively(mappings, 2, task)
+#     print("NEW MAPPING LEVEL 2:")
+#     print(new_mapping)

@@ -1,8 +1,8 @@
 files:
-  input_path: data/user_input.txt
+  input_path: data/user_input_uk.txt
   log_path: logs/pipeline.log
-  output_path: data/preprocessed_output.txt
-  task_path: data/task_description.txt
+  output_path: data/preprocessed_output_ukr.txt
+  task_path: data/task_description_uk.txt
 llm_invoke:
   api:
     retries: 3
@@ -10,7 +10,6 @@ llm_invoke:
   max_tokens: 1000
   model: gpt-4
   provider: openai
-  system_prompt: You are a assistant.
   temperature: 0.3
 logging:
   enabled: true
@@ -26,7 +25,7 @@ ner_processor:
   - LOC
   - DATE
   - MONEY
-  model: en_core_web_sm
+  model: roberta_ukr
   sensitivity_levels:
     DATE: 3
     GPE: 2
@@ -49,10 +48,19 @@ context_processor:
   model: llama
   level: 2
   margin: 20
+llm_ner_processor:
+  url : http://localhost:11434/api/generate
+  model : llama3.2
+retrieve:
+  chunk_overlap: 30
+  chunk_size: 300
+  k: 3
+  retrieval_type: similarity
 processing:
   order:
-  - llm_ner_processor
-  - context_processor
+  - retrieve
+  - pattern_processor
+  - ner_processor
   - llm_invoke
   - postprocessor
 retriever:

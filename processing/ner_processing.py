@@ -4,9 +4,8 @@ from models.NER_models.bert.eng_bert_infer import BertEng
 from models.NER_models.roberta_ukr.ukr_roberta import ROBertaUkr
 
 class NERProcessor:
-    def __init__(self, config):
-        self.model_name = config['model']
-        # self.context_awareness_level = config["context_awareness_level"]
+    def __init__(self, config=None):
+        self.model_name = config.get('model', "")
 
     def preprocess(self, processed_text, pattern_replacements, entity_map):
         if self.model_name in ["en_core_web_sm", "uk_core_news_sm"]:
@@ -37,7 +36,7 @@ class NERProcessor:
 
         elif self.model_name == "roberta_ukr":
             roberta_infer = ROBertaUkr()
-            masked_sentence, ner_replacements = roberta_infer.mask_entities_in_sentence(processed_text, max_len=128, lemmatize=False)
+            masked_sentence, ner_replacements = roberta_infer.run(processed_text)
             for entity, cathegory in ner_replacements.items():
                 if entity not in pattern_replacements.values() and entity_map.values():
                     replacement = cathegory.split("_")[0].upper() + "_" + len(entity_map)

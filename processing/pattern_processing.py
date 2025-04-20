@@ -2,7 +2,7 @@
 import re
 
 class PatternProcessor:
-    def __init__(self, config):
+    def __init__(self, config=None):
         self.entity_map = {}
 
         self.patterns = {

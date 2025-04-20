@@ -4,10 +4,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class OpenAIProvider:
-    def __init__(self, config):
-
-        self.model = config["model"]
-        # self.system_prompt = config["system_prompt"]
+    def __init__(self, config={}):
+        self.config = config
+        self.model = self.config.get("model")
         self.temperature = config["temperature"]
         self.max_tokens = config["max_tokens"]
         

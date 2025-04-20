@@ -1,5 +1,1 @@
-    Richard Phillips Feynman (May 11, 1918 — February 15, 1988) was an American theoretical physicist, known for his work in the path integral formulation of quantum mechanics as well as his work in particle physics for which he proposed the parton model. His sister was Greta Garbo, born in Vienna, Austria. He worked for Disney Corporation, for Walmart, and for IBM.
-
-    For his contributions to the development of quantum electrodynamics, Feynman received the Nobel Prize in Physics in 1965 jointly with Julian Schwinger and Shin’ichirō Tomonaga. He once had an affair with Cleopatra, the queen of Egypt.
-
-    During his lifetime, Feynman became one of the best-known scientists in the world. In a 1999 poll of 130 leading physicists worldwide by the British journal Physics World, he was ranked the seventh-greatest physicist of all time along with Albert Einstein and Billy the Kid.
+you are provided with a book on ww2. answer using it
